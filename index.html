@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Ferreto</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <div id="aviso">
+        <img src="security.png" alt="">
+        <h1>Este WebSite é um clone do site Original e não deve ser usado como base para enganar demais usuarios da
+            plataforma.</h1>
+    </div>
+    <div id="site">
+        <aside>
+            <img src="/download.png" alt="" id="menuicon">
+            <div id="darkmode">MODO ESCURO <div id="darkmode-btn"><button id="btn">.</button></div>
+            </div>
+            <menu>
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Inicio
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-26.000000, -254.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(27.000000, 255.000000)">
+                                        <path
+                                            d="M16.6666667,16 L3.33333333,16 C2.44927837,16 1.60143199,15.6488105 0.976310729,15.0236893 C0.351189468,14.398568 7.40148683e-17,13.5507216 0,12.6666667 L20,12.6666667 C20,14.5076158 18.5076158,16 16.6666667,16 L16.6666667,16 Z">
+                                        </path>
+                                        <path
+                                            d="M2,10 L2,2 C2,0.8954305 2.8954305,-5.92118946e-16 4,-5.92118946e-16 L16,-5.92118946e-16 C17.1045695,-5.92118946e-16 18,0.8954305 18,2 L18,10">
+                                        </path>
+                                        <polygon points="8.66666667 4.66666667 8.66666667 8.66666667 12 6.66666667">
+                                        </polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Aulas
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="30px" version8="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 22" xml:space="preserve"
+                        style="margin-top: -8px; margin-bottom: -8px;">
+                        <circle cx="11" cy="11" r="6.6" fill="none" stroke="#A6A6BE" stroke-miterlimit="10"></circle>
+                        <polygon points="9.8,11 9.8,9.1 11.4,10.1 13,11 11.4,11.9 9.8,12.9 " fill="none"
+                            stroke="#A6A6BE" stroke-width="1.2" stroke-miterlimit="10"></polygon>
+                    </svg> Ferretto+
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> REDAÇÃO
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-28.000000, -310.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(29.000000, 311.000000)">
+                                        <rect x="0" y="0" width="5.6" height="5.6"></rect>
+                                        <rect x="10.4" y="10.4" width="5.6" height="5.6"></rect>
+                                        <rect x="0" y="10.4" width="5.6" height="5.6"></rect>
+                                        <polyline points="10.4 3.2 12 4.8 16 0.8"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> PROVAS COMENTADAS
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Inicio
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-26.000000, -254.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(27.000000, 255.000000)">
+                                        <path
+                                            d="M16.6666667,16 L3.33333333,16 C2.44927837,16 1.60143199,15.6488105 0.976310729,15.0236893 C0.351189468,14.398568 7.40148683e-17,13.5507216 0,12.6666667 L20,12.6666667 C20,14.5076158 18.5076158,16 16.6666667,16 L16.6666667,16 Z">
+                                        </path>
+                                        <path
+                                            d="M2,10 L2,2 C2,0.8954305 2.8954305,-5.92118946e-16 4,-5.92118946e-16 L16,-5.92118946e-16 C17.1045695,-5.92118946e-16 18,0.8954305 18,2 L18,10">
+                                        </path>
+                                        <polygon points="8.66666667 4.66666667 8.66666667 8.66666667 12 6.66666667">
+                                        </polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Aulas
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="30px" version8="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 22" xml:space="preserve"
+                        style="margin-top: -8px; margin-bottom: -8px;">
+                        <circle cx="11" cy="11" r="6.6" fill="none" stroke="#A6A6BE" stroke-miterlimit="10"></circle>
+                        <polygon points="9.8,11 9.8,9.1 11.4,10.1 13,11 11.4,11.9 9.8,12.9 " fill="none"
+                            stroke="#A6A6BE" stroke-width="1.2" stroke-miterlimit="10"></polygon>
+                    </svg> Ferretto+
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> REDAÇÃO
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-28.000000, -310.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(29.000000, 311.000000)">
+                                        <rect x="0" y="0" width="5.6" height="5.6"></rect>
+                                        <rect x="10.4" y="10.4" width="5.6" height="5.6"></rect>
+                                        <rect x="0" y="10.4" width="5.6" height="5.6"></rect>
+                                        <polyline points="10.4 3.2 12 4.8 16 0.8"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> PROVAS COMENTADAS
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Inicio
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-26.000000, -254.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(27.000000, 255.000000)">
+                                        <path
+                                            d="M16.6666667,16 L3.33333333,16 C2.44927837,16 1.60143199,15.6488105 0.976310729,15.0236893 C0.351189468,14.398568 7.40148683e-17,13.5507216 0,12.6666667 L20,12.6666667 C20,14.5076158 18.5076158,16 16.6666667,16 L16.6666667,16 Z">
+                                        </path>
+                                        <path
+                                            d="M2,10 L2,2 C2,0.8954305 2.8954305,-5.92118946e-16 4,-5.92118946e-16 L16,-5.92118946e-16 C17.1045695,-5.92118946e-16 18,0.8954305 18,2 L18,10">
+                                        </path>
+                                        <polygon points="8.66666667 4.66666667 8.66666667 8.66666667 12 6.66666667">
+                                        </polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Aulas
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="30px" version8="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 22" xml:space="preserve"
+                        style="margin-top: -8px; margin-bottom: -8px;">
+                        <circle cx="11" cy="11" r="6.6" fill="none" stroke="#A6A6BE" stroke-miterlimit="10"></circle>
+                        <polygon points="9.8,11 9.8,9.1 11.4,10.1 13,11 11.4,11.9 9.8,12.9 " fill="none"
+                            stroke="#A6A6BE" stroke-width="1.2" stroke-miterlimit="10"></polygon>
+                    </svg> Ferretto+
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> REDAÇÃO
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-28.000000, -310.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(29.000000, 311.000000)">
+                                        <rect x="0" y="0" width="5.6" height="5.6"></rect>
+                                        <rect x="10.4" y="10.4" width="5.6" height="5.6"></rect>
+                                        <rect x="0" y="10.4" width="5.6" height="5.6"></rect>
+                                        <polyline points="10.4 3.2 12 4.8 16 0.8"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> PROVAS COMENTADAS
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Inicio
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-26.000000, -254.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(27.000000, 255.000000)">
+                                        <path
+                                            d="M16.6666667,16 L3.33333333,16 C2.44927837,16 1.60143199,15.6488105 0.976310729,15.0236893 C0.351189468,14.398568 7.40148683e-17,13.5507216 0,12.6666667 L20,12.6666667 C20,14.5076158 18.5076158,16 16.6666667,16 L16.6666667,16 Z">
+                                        </path>
+                                        <path
+                                            d="M2,10 L2,2 C2,0.8954305 2.8954305,-5.92118946e-16 4,-5.92118946e-16 L16,-5.92118946e-16 C17.1045695,-5.92118946e-16 18,0.8954305 18,2 L18,10">
+                                        </path>
+                                        <polygon points="8.66666667 4.66666667 8.66666667 8.66666667 12 6.66666667">
+                                        </polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Aulas
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="30px" version8="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 22" xml:space="preserve"
+                        style="margin-top: -8px; margin-bottom: -8px;">
+                        <circle cx="11" cy="11" r="6.6" fill="none" stroke="#A6A6BE" stroke-miterlimit="10"></circle>
+                        <polygon points="9.8,11 9.8,9.1 11.4,10.1 13,11 11.4,11.9 9.8,12.9 " fill="none"
+                            stroke="#A6A6BE" stroke-width="1.2" stroke-miterlimit="10"></polygon>
+                    </svg> Ferretto+
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> REDAÇÃO
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-28.000000, -310.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(29.000000, 311.000000)">
+                                        <rect x="0" y="0" width="5.6" height="5.6"></rect>
+                                        <rect x="10.4" y="10.4" width="5.6" height="5.6"></rect>
+                                        <rect x="0" y="10.4" width="5.6" height="5.6"></rect>
+                                        <polyline points="10.4 3.2 12 4.8 16 0.8"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> PROVAS COMENTADAS
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Inicio
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-26.000000, -254.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(27.000000, 255.000000)">
+                                        <path
+                                            d="M16.6666667,16 L3.33333333,16 C2.44927837,16 1.60143199,15.6488105 0.976310729,15.0236893 C0.351189468,14.398568 7.40148683e-17,13.5507216 0,12.6666667 L20,12.6666667 C20,14.5076158 18.5076158,16 16.6666667,16 L16.6666667,16 Z">
+                                        </path>
+                                        <path
+                                            d="M2,10 L2,2 C2,0.8954305 2.8954305,-5.92118946e-16 4,-5.92118946e-16 L16,-5.92118946e-16 C17.1045695,-5.92118946e-16 18,0.8954305 18,2 L18,10">
+                                        </path>
+                                        <polygon points="8.66666667 4.66666667 8.66666667 8.66666667 12 6.66666667">
+                                        </polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Aulas
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="30px" version8="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 22" xml:space="preserve"
+                        style="margin-top: -8px; margin-bottom: -8px;">
+                        <circle cx="11" cy="11" r="6.6" fill="none" stroke="#A6A6BE" stroke-miterlimit="10"></circle>
+                        <polygon points="9.8,11 9.8,9.1 11.4,10.1 13,11 11.4,11.9 9.8,12.9 " fill="none"
+                            stroke="#A6A6BE" stroke-width="1.2" stroke-miterlimit="10"></polygon>
+                    </svg> Ferretto+
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> REDAÇÃO
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-28.000000, -310.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(29.000000, 311.000000)">
+                                        <rect x="0" y="0" width="5.6" height="5.6"></rect>
+                                        <rect x="10.4" y="10.4" width="5.6" height="5.6"></rect>
+                                        <rect x="0" y="10.4" width="5.6" height="5.6"></rect>
+                                        <polyline points="10.4 3.2 12 4.8 16 0.8"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> PROVAS COMENTADAS
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Inicio
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-26.000000, -254.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(27.000000, 255.000000)">
+                                        <path
+                                            d="M16.6666667,16 L3.33333333,16 C2.44927837,16 1.60143199,15.6488105 0.976310729,15.0236893 C0.351189468,14.398568 7.40148683e-17,13.5507216 0,12.6666667 L20,12.6666667 C20,14.5076158 18.5076158,16 16.6666667,16 L16.6666667,16 Z">
+                                        </path>
+                                        <path
+                                            d="M2,10 L2,2 C2,0.8954305 2.8954305,-5.92118946e-16 4,-5.92118946e-16 L16,-5.92118946e-16 C17.1045695,-5.92118946e-16 18,0.8954305 18,2 L18,10">
+                                        </path>
+                                        <polygon points="8.66666667 4.66666667 8.66666667 8.66666667 12 6.66666667">
+                                        </polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> Aulas
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="30px" version8="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 22" xml:space="preserve"
+                        style="margin-top: -8px; margin-bottom: -8px;">
+                        <circle cx="11" cy="11" r="6.6" fill="none" stroke="#A6A6BE" stroke-miterlimit="10"></circle>
+                        <polygon points="9.8,11 9.8,9.1 11.4,10.1 13,11 11.4,11.9 9.8,12.9 " fill="none"
+                            stroke="#A6A6BE" stroke-width="1.2" stroke-miterlimit="10"></polygon>
+                    </svg> Ferretto+
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="20px" viewBox="0 0 23 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-25.000000, -194.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(26.000000, 195.000000)">
+                                        <polyline points="0 8.57142857 10.7142857 0 21.4285714 8.57142857"></polyline>
+                                        <polyline stroke-linecap="square"
+                                            points="2.85714286 10 2.85714286 20 18.5714286 20 18.5714286 10"></polyline>
+                                        <path
+                                            d="M14.315,9.28 C13.8258205,8.76810479 13.1273595,8.51128247 12.4230908,8.58434982 C11.7188221,8.65741718 11.08796,9.05215577 10.7142857,9.65357143 C10.3406114,9.05215577 9.70974937,8.65741718 9.00548064,8.58434982 C8.30121191,8.51128247 7.60275092,8.76810479 7.11357143,9.28 C6.19982751,10.2374544 6.19982751,11.7439742 7.11357143,12.7014286 L10.7142857,16.4285714 L14.3157143,12.7014286 C15.2292583,11.7437834 15.2289438,10.2372636 14.315,9.28 Z"
+                                            stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> REDAÇÃO
+                </div>
+
+                <div class="menuitem">
+                    <svg width="30px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <g transform="translate(-28.000000, -310.000000)" stroke="#A6A6BE" stroke-width="1.5">
+                                <g>
+                                    <g transform="translate(29.000000, 311.000000)">
+                                        <rect x="0" y="0" width="5.6" height="5.6"></rect>
+                                        <rect x="10.4" y="10.4" width="5.6" height="5.6"></rect>
+                                        <rect x="0" y="10.4" width="5.6" height="5.6"></rect>
+                                        <polyline points="10.4 3.2 12 4.8 16 0.8"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg> PROVAS COMENTADAS
+                </div>
+
+            </menu>
+        </aside>
+
+        <main>
+
+            <div id="mainprofile">
+                <h1>Questões</h1>
+                <div id="profile">
+                    <div id="profileimg">D</div>
+                    <div id="profilethings">
+                        <h1>Diego Castro</h1>
+                        <h2>diegocastro1087@gmail.com</h2>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="mainbottom">
+
+                <div id="bottomleft">
+                    <div id="questions">
+                        <div id="leftquestions">Anterior</div>
+                        <div id="centerquestions">QUESTÃO 1 / 16</div>
+                        <div id="rightquestions">Próxima</div>
+                    </div>
+
+                    <div id="quest">
+                        <h1>Professor Ferreto | M1432</h1>
+                        <div id="questao">
+                            <p>Para a proteção contra curtos-circuitos em residências são utilizados disjuntores,
+                                compostos por duas lâminas de metais diferentes, com suas superfícies soldadas uma à
+                                outra, ou seja, uma lâmina bimetálica. Essa lâmina toca o contato elétrico, fechando o
+                                circuito e deixando a corrente elétrica passar. Quando da passagem de uma corrente
+                                superior à estipulada (limite), a lâmina se curva para um dos lados, afastando-se do
+                                contato elétrico e, assim, interrompendo o circuito. Isso ocorre porque os metais da
+                                lâmina possuem uma característica física cuja resposta é diferente para a mesma corrente
+                                elétrica que passa no circuito.
+                                <br><br>
+                                A característica física que deve ser observada para a escolha dos dois metais dessa
+                                lâmina bimetálica é o coeficiente de
+                            </p>
+                            <form action="#">
+                            <ol type="A">
+                                <li>
+                                    <div class="questao-btn"><input type="checkbox"> opção1</div>
+                                </li>
+                                <li>
+                                    <div class="questao-btn"><input type="checkbox"> opção2</div>
+                                </li>
+                                <li>
+                                    <div class="questao-btn"><input type="checkbox"> opção3</div>
+                                </li>
+                                <li>
+                                    <div class="questao-btn"><input type="checkbox"> opção4</div>
+                                </li>
+                                <li>
+                                    <div class="questao-btn"><input type="checkbox"> opção5</div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div id="responder">
+                            <div id="leftresponder"><input type="checkbox"> Adicinar ao meu caderno</div>
+                            <div class="answer"><button type="submit">Responder</button></div>
+                            <div id="nothing"></div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+
+                <div id="bottomright">
+                    <form action="#">
+                        <legend id="filter">filtrar questões</legend>
+
+                        <div class="seletor">
+                            <label>Filtro1</label>
+                            <select name="discipline-one" id="discipline-one">
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                            </select>
+                        </div>
+
+                        <div class="seletor">
+                            <label>Filtro2</label>
+                            <select name="discipline-two" id="discipline-two"><option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option></select>
+                        </div>
+
+                        <div class="seletor">
+                            <label>Filtro3</label>
+                            <select name="discipline-three" id="discipline-three"><option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option></select>
+                        </div>
+
+                        <div class="seletor">
+                            <label>Filtro4</label>
+                            <select name="discipline-four" id="discipline-four"><option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option></select>
+                        </div>
+
+                        <div class="seletor">
+                            <label>Filtro</label>
+                            <select name="discipline-five" id="discipline-five"><option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option></select>
+                        </div>
+
+                        <div id="filter-answer"><button type="submit">filtrar</button></div>
+                    </form>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+</body>
+
+</html>
